@@ -46,7 +46,7 @@ int main(int argc, char** argv) {
 
     for (const auto& norm : { true, false }) {
       const auto& richtungsInfo = (norm ? el->InfoNormRichtung : el->InfoGegenRichtung);
-      if (!richtungsInfo || (richtungsInfo->Reg < 1000)) {
+      if (!richtungsInfo || (richtungsInfo->Reg < 5000)) {
         continue;
       }
 
